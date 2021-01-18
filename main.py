@@ -12,7 +12,7 @@ knn.fit(X_train, y_train)
 home = input("Ev sahibi takımının ELO ratingi: ")
 away = input("Deplasman takımının ELO ratingi: ")
 
-X_new = np.array([[home, away]])
+X_new = np.array([[int(home), int(away)]])
 predict = knn.predict(X_new)
 
 y_predict = knn.predict(X_test)
